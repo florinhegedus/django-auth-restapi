@@ -1,0 +1,19 @@
+POST http://127.0.0.1:8000/auth/register/
+Content-Type: application/json
+
+{"username": "test2", "email": "test2@gmail.com", "password": "test", "password2": "test"}
+
+###
+
+POST http://127.0.0.1:8000/auth/login/
+Content-Type: application/json
+
+{"username": "test2", "password": "test"}
+
+###
+
+POST http://127.0.0.1:8000/auth/logout/
+Content-Type: application/json
+Authorization: Token 05826eebdb4ff76d7819182fd3440b88e216e129
+
+{}
